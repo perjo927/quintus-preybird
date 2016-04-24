@@ -2,12 +2,19 @@
 HTML5 Experimental Game
 
 ## Getting started
-TBA
+*TBA*
 
 ### Install
-TBA
+*TBA*
+
+### Run
+*TBA*
+
+### Develop
 
 ## Author
-    __Who__: Per Jonsson
-    __Where__: [www.programmerper.com](www.programmerper.com)
-    __Project Page__: TBA
+**Who**: Per Jonsson
+
+**Where**: [www.programmerper.com](www.programmerper.com)
+
+**Project Page**: *TBA*
