@@ -18,13 +18,13 @@
   "homepage": "https://github.com/perjo927/quintus-preybird#readme",
 
   "scripts": {
-    "start": "concurrently \"npm run scss:w\" \"npm run tsc:w\" \"npm run lite\" ",
+    "start": "concurrently \"npm run scss\" \"npm run scss:w\" \"npm run tsc:w\" \"npm run lite\" ",
     "scss": "gulp sass",
     "scss:w": "gulp sass:watch",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "test": "tsc",
-    "tdd": "live-server --open=unit-tests.html",
+    "tdd": "live-server --open=unit-tests.html --port=8083",
     "lite": "lite-server",
     "typings": "typings",
     "postinstall": "typings install"
