@@ -1,0 +1,11 @@
+.idea
+
+npm-debug.log*
+
+node_modules
+bower_components
+typings
+
+app/**/*.js
+*.map
+app/**/*.css
