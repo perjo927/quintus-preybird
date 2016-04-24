@@ -27,7 +27,7 @@
     "tdd": "live-server --open=unit-tests.html",
     "lite": "lite-server",
     "typings": "typings",
-    "postinstall": "typings install",
+    "postinstall": "typings install"
   },
   "dependencies": {
     "angular2": "^2.0.0-beta.12",
