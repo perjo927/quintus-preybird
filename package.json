@@ -1,0 +1,19 @@
+{
+  "name": "quintus-preybird",
+  "version": "1.0.0",
+  "description": "html5 game",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/perjo927/quintus-preybird.git"
+  },
+  "author": "programmerper",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/perjo927/quintus-preybird/issues"
+  },
+  "homepage": "https://github.com/perjo927/quintus-preybird#readme"
+}
