@@ -1,4 +1,4 @@
-import { Component, ViewChild, AfterViewInit } from 'angular2/core';
+import {Component, ViewChild, AfterViewInit, ElementRef} from 'angular2/core';
 
 @Component({
     selector: 'quintus-preybird-app',
@@ -10,19 +10,23 @@ import { Component, ViewChild, AfterViewInit } from 'angular2/core';
 })
 
 export class AppComponent {
-    rectW:number = 100;
-    rectH:number = 100;
-    rectColor: string = "#FF0000";
+    width:number;
+    height:number;
     context: CanvasRenderingContext2D;
+    player: HTMLImageElement;
 
     // https://angular.io/docs/ts/latest/api/core/ViewChild-var.html
     // You can use the ViewChild annotation to grab an instance of your canvas element
     // get element with #gameCanvas reference
-    @ViewChild("gameCanvas") gameCanvas: HTMLCanvasElement;
+    @ViewChild("gameCanvas") gameCanvas: ElementRef;
 
     constructor(){
-        this._width = 800;
-        this._height = 600;
+        this.width = 800;
+        this.height = 600;
+
+        this.player = new Image();
+        this.player.src = "app/static/player.gif";
+
     }
 
     ngAfterViewInit() {
@@ -33,14 +37,14 @@ export class AppComponent {
     }
 
     tick() {
-        requestAnimationFrame(()=> {
-            this.tick()
-        });
+        // requestAnimationFrame(()=> {
+        //     this.tick()
+        // });
 
         let ctx = this.context;
 
-        ctx.clearRect(0, 0, 400, 400);
-        ctx.fillStyle = this.rectColor;
-        ctx.fillRect(0, 0, this.rectW, this.rectH);
+
+        ctx.strokeRect(0, 0, this.width, this.height);
+        ctx.drawImage(this.player, this.width/2, this.height/2);
     }
 }
