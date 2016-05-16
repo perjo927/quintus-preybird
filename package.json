@@ -15,16 +15,18 @@
   "homepage": "https://github.com/perjo927/quintus-preybird#readme",
 
   "scripts": {
-    "start": "concurrently \"npm run scss\" \"npm run scss:w\" \"npm run tsc:w\" \"npm run lite\" ",
-    "scss": "gulp sass",
-    "scss:w": "gulp sass:watch",
+    "start": "concurrently \"npm run sass\" \"npm run sass:w\" \"npm run tsc:w\" \"npm run lite\" ",
+    "compile": "npm run sass && npm run tsc",
+    "sass": "gulp sass",
+    "sass:w": "gulp sass:watch",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "test": "tsc",
     "tdd": "live-server --open=unit-tests.html --port=8083",
     "lite": "lite-server",
     "typings": "typings",
-    "postinstall": "typings install"
+    "postinstall": "typings install",
+    "release": "npm run compile && gulp release"
   },
   "dependencies": {
     "angular2": "^2.0.0-beta.12",
