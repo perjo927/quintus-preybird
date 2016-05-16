@@ -3,9 +3,6 @@
   "version": "0.0.1",
   "description": "html5 game",
 
-  "scripts": {
-    "test": "test"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/perjo927/quintus-preybird.git"

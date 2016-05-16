@@ -7,7 +7,7 @@ HTML5 Experimental Game
 > npm install
 
 ### Run
-npm start
+> npm start
 
 ## Author
 **Who**: Per Jonsson
