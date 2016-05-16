@@ -2,15 +2,12 @@
 HTML5 Experimental Game
 
 ## Getting started
-*TBA*
 
-### Install
-*TBA*
+### Installation
+> npm install
 
 ### Run
-*TBA*
-
-### Develop
+npm start
 
 ## Author
 **Who**: Per Jonsson
